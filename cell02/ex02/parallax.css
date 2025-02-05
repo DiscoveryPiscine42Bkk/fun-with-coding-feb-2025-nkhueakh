@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax1 {
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/the-deep-header.jpg');
+}
+
+.parallax2 {
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/A-Train.jpg');
+}
+
+.content-section {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}

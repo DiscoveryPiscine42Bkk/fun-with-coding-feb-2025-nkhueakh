@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    padding-top: 50px;
+}
+button {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+nav {
+    background-color: #004760;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4%;
+    left: 0;
+    z-index: 1000;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+header {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg');
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: black;
+}
+section {
+    padding: 50px 20px;
+}
+.parallax1 {
+    background-color: white;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25c93289-0576-4645-bc48-e828abec9740/ddd8xi9-0d587ce6-ea96-4dde-b338-7aba4da558b6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1YzkzMjg5LTA1NzYtNDY0NS1iYzQ4LWU4MjhhYmVjOTc0MFwvZGRkOHhpOS0wZDU4N2NlNi1lYTk2LTRkZGUtYjMzOC03YWJhNGRhNTU4YjYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JDt8kG1LYXTGXsJ5ZBpXTPgEec_hLQzsYjz_2_i3uD0');
+    text-align: left;
+    background-size: 45% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 30vh;
+    text-align: center;
+}
+.parallax2 {
+    background-image: url('https://buyboosting.com/assets/imgs/lol/rank-icons/silver.png'),
+                      url('https://buyboosting.com/assets/imgs/lol/rank-icons/silver.png');
+    background-position: left,right;
+    background-repeat: no-repeat,no-repeat;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 15px;
+}
+.content-section {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+.content-section img {
+    width: 30px;
+    margin: 5px;
+    transition: 0.3s;
+}
+.content-section img:hover {
+    transform: scale(1.1);
+}
+.text-center {
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f1edaf;
+    width: 100%;
+    max-width: 500px;
+}
+.text-center img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.col {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #004760;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    button {
+        width: 100%;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

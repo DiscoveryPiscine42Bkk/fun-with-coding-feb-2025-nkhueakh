@@ -1,0 +1,100 @@
+header {
+    color: #d0df06;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/artbook/en_US/f31d8b829b603b4b65fdff2475bd0803ced0179d/assets/content/summoners_rift/17_map/map_02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav {
+    background-color: #004760;
+    padding: 10px 0;
+    position: relative;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.player-section {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+.player {
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f1edaf;
+    width: 100%;
+    max-width: 500px;
+}
+.player img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav {
+        background-color: #004760;
+        padding: 10px 0;
+        position: relative;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: auto;
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .player-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .player img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+

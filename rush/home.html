@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <button class="menu-toggle">☰</button> 
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="port_player1.html">ssupakit</a></li>
+            <li><a href="port_player2.html">nkhueakh</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to the Summoner Rift</h1>
+    </header>
+    <section class="player-section">
+        <div class="player">
+            <a href="port_player1.html">
+                <img src="Midlaner.jpg" alt="Player 1">
+                
+            </a>
+            <h1>ssupakit</h1>
+            <p>The Midlaner</p>
+        </div>
+       
+        <div class="player">
+            <a href="port_player2.html">
+                <img src="Toplaner.jpg" alt="Player 2">
+                
+            </a>
+            <h1>nkhueakh</h1>
+            <p>The Toplaner</p>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.nav-links').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
